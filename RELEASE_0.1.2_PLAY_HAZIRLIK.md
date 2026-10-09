@@ -15,5 +15,5 @@ Henüz yapılmayanlar: bu ortamda Flutter/Android SDK indirilemediği için derl
 - `google_mobile_ads` bağımlılığı; `lib/ads/ads_manager.dart` (UMP rıza akışı, banner, oyun sonu geçiş reklamı: en erken her 3. oyun ve 90 sn ara), `lib/ads/ad_ids.dart` (kimlikler).
 - Ana ekran altında banner; oyun bitiş ekranında geçiş reklamı. Oyun motoru/kayıt reklama bağımlı değil; SDK başlatılamazsa oyun reklamsız devam eder (testlerde no-op).
 - Manifest: INTERNET, ACCESS_NETWORK_STATE, AdMob APPLICATION_ID meta-data.
-- **Şu an Google TEST kimlikleri kullanılıyor.** Gerçek AdMob App ID + 2 reklam birimi kimliği alınınca `ad_ids.dart` ve manifest güncellenecek; yayına test kimlikleriyle çıkılmaz.
+- AdMob gerçek kimlikleri işlendi: App ID ca-app-pub-5327895171614279~9354185726; Home Banner /7547203472; Game Over Interstitial /7219900417. Debug derlemede otomatik test kimlikleri, release derlemede gerçek kimlikler.
 - "Reklamsız" ifadeleri ana ekran, mağaza metni ve gizlilik politikasından kaldırıldı; politika AdMob bölümüyle güncellendi.
