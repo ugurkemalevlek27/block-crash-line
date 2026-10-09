@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../ads/ads_manager.dart';
 import '../controller.dart';
 import '../economy/profile.dart';
 import '../engine/game.dart';
@@ -47,7 +48,9 @@ class HomeScreen extends ConsumerWidget {
     return PageShell(
         tr: '',
         en: '',
-        child: ListView(
+        child: Column(children: [
+          Expanded(
+              child: ListView(
             padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 12),
             children: [
               const Center(child: BlockLogo()),
@@ -125,11 +128,13 @@ class HomeScreen extends ConsumerWidget {
                                 '${min(p.dailyLines, 20)}/20 · ${text(p, 'Günlük giriş: 50 jeton eklendi', 'Daily login: 50 coins added')}')
                           ]))),
               const SizedBox(height: 12),
-              Text(text(p, 'ÇEVRİMDIŞI · REKLAMSIZ', 'OFFLINE · NO ADS'),
+              Text(text(p, 'ÇEVRİMDIŞI OYNANIR', 'PLAYS OFFLINE'),
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                       fontSize: 11, letterSpacing: 2, color: Colors.white54))
-            ]));
+            ])),
+          const AdBanner()
+        ]));
   }
 }
 

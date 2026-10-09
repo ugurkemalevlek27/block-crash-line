@@ -1,6 +1,8 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'ads/ads_manager.dart';
 import 'controller.dart';
 import 'ui/screens.dart';
 
@@ -8,6 +10,8 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runApp(const ProviderScope(child: BlockCrashApp()));
+  // Reklam SDK'sı ve rıza formu ilk kare çizildikten sonra arka planda başlar.
+  unawaited(AdsManager.instance.initialize());
 }
 
 class BlockCrashApp extends ConsumerStatefulWidget {

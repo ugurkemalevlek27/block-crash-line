@@ -10,3 +10,10 @@ Değişiklikler (oyun motoru, bölümler, kayıt/ekonomi/ses kaynaklarına dokun
 - CI (`.github/workflows/flutter.yml`): format/analyze/test → `flutter build appbundle --release` + APK; imza gizli anahtarlardan (GitHub Secrets) okunur; çıktı artifact olarak yüklenir.
 
 Henüz yapılmayanlar: bu ortamda Flutter/Android SDK indirilemediği için derleme ve testler **çalıştırılmadı**; CI ilk çalışmada doğrulanacak. Fiziksel cihaz testi, ekran görüntüleri ve Play Console işlemleri bekliyor.
+
+## Reklam (AdMob) eklendi — Kemal'in talebi (10 Ekim 2026)
+- `google_mobile_ads` bağımlılığı; `lib/ads/ads_manager.dart` (UMP rıza akışı, banner, oyun sonu geçiş reklamı: en erken her 3. oyun ve 90 sn ara), `lib/ads/ad_ids.dart` (kimlikler).
+- Ana ekran altında banner; oyun bitiş ekranında geçiş reklamı. Oyun motoru/kayıt reklama bağımlı değil; SDK başlatılamazsa oyun reklamsız devam eder (testlerde no-op).
+- Manifest: INTERNET, ACCESS_NETWORK_STATE, AdMob APPLICATION_ID meta-data.
+- **Şu an Google TEST kimlikleri kullanılıyor.** Gerçek AdMob App ID + 2 reklam birimi kimliği alınınca `ad_ids.dart` ve manifest güncellenecek; yayına test kimlikleriyle çıkılmaz.
+- "Reklamsız" ifadeleri ana ekran, mağaza metni ve gizlilik politikasından kaldırıldı; politika AdMob bölümüyle güncellendi.

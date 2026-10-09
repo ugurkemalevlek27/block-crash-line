@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import '../ads/ads_manager.dart';
 import '../controller.dart';
 import '../engine/game.dart';
 import '../engine/shapes.dart';
@@ -475,6 +476,8 @@ class _Result extends ConsumerWidget {
     final a = ref.watch(appProvider),
         p = a.profile,
         won = game.outcome == Outcome.won;
+    WidgetsBinding.instance.addPostFrameCallback(
+        (_) => AdsManager.instance.onGameEnded(identityHashCode(game)));
     return ColoredBox(
         color: const Color(0xe8071020),
         child: Center(
