@@ -19,11 +19,11 @@ jobs:
       - run: dart format --output=none --set-exit-if-changed lib test
       - run: flutter analyze
       - run: flutter test
-      - name: Restore upload keystore from secrets (skipped on forks / when secrets are absent)
-        if: ${{ secrets.UPLOAD_KEYSTORE_BASE64 != '' }}
+      - name: Restore upload keystore from secrets (skipped when secrets are absent)
         env:
           KEYSTORE_BASE64: ${{ secrets.UPLOAD_KEYSTORE_BASE64 }}
         run: |
+          if [ -z "$KEYSTORE_BASE64" ]; then echo "No upload keystore secret; bundle will be unsigned"; exit 0; fi
           mkdir -p android/keys
           echo "$KEYSTORE_BASE64" | base64 -d > android/keys/block-crash-upload.jks
           cat > android/key.properties <<EOP
