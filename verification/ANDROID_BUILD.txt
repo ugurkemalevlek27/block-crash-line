@@ -1,0 +1,30 @@
+   Woah! You appear to be trying to run flutter as root.
+   We strongly recommend running the flutter tool without superuser privileges.
+  /
+📎
+
+Running Gradle task 'assembleRelease'...                        
+Warning: Observed package id 'platforms;android-35' in inconsistent location '/tmp/qibla-tools/android-sdk/platforms/android-35/android-35' (Expected '/tmp/qibla-tools/android-sdk/platforms/android-35')
+Warning: Observed package id 'platforms;android-35' in inconsistent location '/tmp/qibla-tools/android-sdk/platforms/android-35/android-35' (Expected '/tmp/qibla-tools/android-sdk/platforms/android-35')
+Checking the license for package NDK (Side by side) 27.0.12077973 in /tmp/qibla-tools/android-sdk/licenses
+License for package NDK (Side by side) 27.0.12077973 accepted.
+Preparing "Install NDK (Side by side) 27.0.12077973 v.27.0.12077973".
+"Install NDK (Side by side) 27.0.12077973 v.27.0.12077973" ready.
+Installing NDK (Side by side) 27.0.12077973 in /tmp/qibla-tools/android-sdk/ndk/27.0.12077973
+"Install NDK (Side by side) 27.0.12077973 v.27.0.12077973" complete.
+"Install NDK (Side by side) 27.0.12077973 v.27.0.12077973" finished.
+Warning: Observed package id 'platforms;android-35' in inconsistent location '/tmp/qibla-tools/android-sdk/platforms/android-35/android-35' (Expected '/tmp/qibla-tools/android-sdk/platforms/android-35')
+Checking the license for package Android SDK Build-Tools 34 in /tmp/qibla-tools/android-sdk/licenses
+License for package Android SDK Build-Tools 34 accepted.
+Preparing "Install Android SDK Build-Tools 34 v.34.0.0".
+"Install Android SDK Build-Tools 34 v.34.0.0" ready.
+Installing Android SDK Build-Tools 34 in /tmp/qibla-tools/android-sdk/build-tools/34.0.0
+"Install Android SDK Build-Tools 34 v.34.0.0" complete.
+"Install Android SDK Build-Tools 34 v.34.0.0" finished.
+   Woah! You appear to be trying to run flutter as root.
+   We strongly recommend running the flutter tool without superuser privileges.
+  /
+📎
+Font asset "MaterialIcons-Regular.otf" was tree-shaken, reducing it from 1645184 to 4296 bytes (99.7% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.
+Running Gradle task 'assembleRelease'...                          134.8s
+✓ Built build/app/outputs/flutter-apk/app-release.apk (25.1MB)

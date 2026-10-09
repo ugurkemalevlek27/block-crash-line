@@ -1,0 +1,25 @@
+{
+  "status": "release APK built; signature verified",
+  "flutter": "3.29.3",
+  "dart": "3.7.2",
+  "jdk": "17.0.20.1",
+  "android_sdk": 35,
+  "ndk": "27.0.12077973",
+  "package": "com.uke.block_crash",
+  "version": "0.1.1+2",
+  "min_sdk": 21,
+  "architectures": [
+    "armeabi-v7a",
+    "arm64-v8a",
+    "x86_64"
+  ],
+  "tests_passed": 30,
+  "analyze": "No issues found",
+  "signing": "local test certificate; not production",
+  "apk_size_bytes": 25116032,
+  "apk_sha256": "76aa3df45d31fc8e1c58a69108ab3e01e19ce909cce456f5e2dbf1070ed540f8",
+  "device_test": "not performed; software emulator did not finish booting",
+  "ios_build": "not performed",
+  "app_name": "Block Crash Line",
+  "upgrade_compatible_with_previous_apk": true
+}

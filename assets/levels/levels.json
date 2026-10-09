@@ -1,0 +1,1282 @@
+[
+  {
+    "id": 1,
+    "board": [
+      "######..",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........"
+    ],
+    "trays": [
+      [
+        "h2",
+        "v3",
+        "T"
+      ]
+    ],
+    "solution": [
+      {
+        "slot": 0,
+        "row": 0,
+        "col": 6
+      }
+    ],
+    "targetScore": 0,
+    "targetLines": 1,
+    "maxMoves": 0,
+    "maxPlacements": 0,
+    "bombs": 0,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "moves",
+        "maximum": null
+      },
+      {
+        "stars": 2,
+        "metric": "moves",
+        "maximum": 3
+      },
+      {
+        "stars": 3,
+        "metric": "moves",
+        "maximum": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "board": [
+      "#####...",
+      "######..",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........"
+    ],
+    "trays": [
+      [
+        "h3",
+        "h2",
+        "L"
+      ]
+    ],
+    "solution": [
+      {
+        "slot": 0,
+        "row": 0,
+        "col": 5
+      },
+      {
+        "slot": 1,
+        "row": 1,
+        "col": 6
+      }
+    ],
+    "targetScore": 0,
+    "targetLines": 2,
+    "maxMoves": 0,
+    "maxPlacements": 0,
+    "bombs": 0,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "moves",
+        "maximum": null
+      },
+      {
+        "stars": 2,
+        "metric": "moves",
+        "maximum": 4
+      },
+      {
+        "stars": 3,
+        "metric": "moves",
+        "maximum": 2
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "board": [
+      "####....",
+      "#####...",
+      "######..",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........"
+    ],
+    "trays": [
+      [
+        "h4",
+        "h3",
+        "h2"
+      ]
+    ],
+    "solution": [
+      {
+        "slot": 0,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "slot": 1,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "slot": 2,
+        "row": 2,
+        "col": 6
+      }
+    ],
+    "targetScore": 0,
+    "targetLines": 3,
+    "maxMoves": 0,
+    "maxPlacements": 0,
+    "bombs": 0,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "moves",
+        "maximum": null
+      },
+      {
+        "stars": 2,
+        "metric": "moves",
+        "maximum": 5
+      },
+      {
+        "stars": 3,
+        "metric": "moves",
+        "maximum": 3
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "board": [
+      "###.....",
+      "###.....",
+      "###.....",
+      "###.....",
+      "##......",
+      "#.......",
+      "........",
+      "........"
+    ],
+    "trays": [
+      [
+        "v2",
+        "v3",
+        "v4"
+      ]
+    ],
+    "solution": [
+      {
+        "slot": 0,
+        "row": 6,
+        "col": 0
+      },
+      {
+        "slot": 1,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "slot": 2,
+        "row": 4,
+        "col": 2
+      }
+    ],
+    "targetScore": 0,
+    "targetLines": 3,
+    "maxMoves": 0,
+    "maxPlacements": 0,
+    "bombs": 0,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "moves",
+        "maximum": null
+      },
+      {
+        "stars": 2,
+        "metric": "moves",
+        "maximum": 5
+      },
+      {
+        "stars": 3,
+        "metric": "moves",
+        "maximum": 3
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "board": [
+      "...#....",
+      "...#....",
+      "...#....",
+      "###.####",
+      "...#....",
+      "...#....",
+      "...#....",
+      "...#...."
+    ],
+    "trays": [
+      [
+        "single",
+        "square",
+        "Z"
+      ]
+    ],
+    "solution": [
+      {
+        "slot": 0,
+        "row": 3,
+        "col": 3
+      }
+    ],
+    "targetScore": 0,
+    "targetLines": 2,
+    "maxMoves": 0,
+    "maxPlacements": 0,
+    "bombs": 0,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "moves",
+        "maximum": null
+      },
+      {
+        "stars": 2,
+        "metric": "moves",
+        "maximum": 3
+      },
+      {
+        "stars": 3,
+        "metric": "moves",
+        "maximum": 1
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "board": [
+      "######..",
+      "#####...",
+      "####....",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........"
+    ],
+    "trays": [
+      [
+        "h2",
+        "h3",
+        "h4"
+      ]
+    ],
+    "solution": [
+      {
+        "slot": 0,
+        "row": 0,
+        "col": 6
+      },
+      {
+        "slot": 1,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "slot": 2,
+        "row": 2,
+        "col": 4
+      }
+    ],
+    "targetScore": 600,
+    "targetLines": 0,
+    "maxMoves": 6,
+    "maxPlacements": 0,
+    "bombs": 0,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "moves",
+        "maximum": 6
+      },
+      {
+        "stars": 2,
+        "metric": "moves",
+        "maximum": 5
+      },
+      {
+        "stars": 3,
+        "metric": "moves",
+        "maximum": 3
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "board": [
+      "###.....",
+      "###.....",
+      "###.....",
+      "###.....",
+      "##......",
+      "#.......",
+      "........",
+      "........"
+    ],
+    "trays": [
+      [
+        "v2",
+        "v3",
+        "v4"
+      ]
+    ],
+    "solution": [
+      {
+        "slot": 0,
+        "row": 6,
+        "col": 0
+      },
+      {
+        "slot": 1,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "slot": 2,
+        "row": 4,
+        "col": 2
+      }
+    ],
+    "targetScore": 650,
+    "targetLines": 0,
+    "maxMoves": 6,
+    "maxPlacements": 0,
+    "bombs": 0,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "moves",
+        "maximum": 6
+      },
+      {
+        "stars": 2,
+        "metric": "moves",
+        "maximum": 5
+      },
+      {
+        "stars": 3,
+        "metric": "moves",
+        "maximum": 3
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "board": [
+      "######..",
+      "#####...",
+      "####....",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........"
+    ],
+    "trays": [
+      [
+        "h2",
+        "h3",
+        "h4"
+      ]
+    ],
+    "solution": [
+      {
+        "slot": 0,
+        "row": 0,
+        "col": 6
+      },
+      {
+        "slot": 1,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "slot": 2,
+        "row": 2,
+        "col": 4
+      }
+    ],
+    "targetScore": 700,
+    "targetLines": 0,
+    "maxMoves": 6,
+    "maxPlacements": 0,
+    "bombs": 0,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "moves",
+        "maximum": 6
+      },
+      {
+        "stars": 2,
+        "metric": "moves",
+        "maximum": 5
+      },
+      {
+        "stars": 3,
+        "metric": "moves",
+        "maximum": 3
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "board": [
+      "######..",
+      "######..",
+      "######..",
+      "######..",
+      ".####...",
+      "..##....",
+      "........",
+      "........"
+    ],
+    "trays": [
+      [
+        "v4",
+        "v3",
+        "v2"
+      ],
+      [
+        "v2",
+        "v3",
+        "v4"
+      ]
+    ],
+    "solution": [
+      {
+        "slot": 0,
+        "row": 4,
+        "col": 0
+      },
+      {
+        "slot": 1,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "slot": 2,
+        "row": 6,
+        "col": 2
+      },
+      {
+        "slot": 0,
+        "row": 6,
+        "col": 3
+      },
+      {
+        "slot": 1,
+        "row": 5,
+        "col": 4
+      },
+      {
+        "slot": 2,
+        "row": 4,
+        "col": 5
+      }
+    ],
+    "targetScore": 3000,
+    "targetLines": 0,
+    "maxMoves": 9,
+    "maxPlacements": 0,
+    "bombs": 0,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "moves",
+        "maximum": 9
+      },
+      {
+        "stars": 2,
+        "metric": "moves",
+        "maximum": 8
+      },
+      {
+        "stars": 3,
+        "metric": "moves",
+        "maximum": 6
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "board": [
+      "####....",
+      "#####...",
+      "######..",
+      "######..",
+      "#####...",
+      "####....",
+      "........",
+      "........"
+    ],
+    "trays": [
+      [
+        "h4",
+        "h3",
+        "h2"
+      ],
+      [
+        "h2",
+        "h3",
+        "h4"
+      ]
+    ],
+    "solution": [
+      {
+        "slot": 0,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "slot": 1,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "slot": 2,
+        "row": 2,
+        "col": 6
+      },
+      {
+        "slot": 0,
+        "row": 3,
+        "col": 6
+      },
+      {
+        "slot": 1,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "slot": 2,
+        "row": 5,
+        "col": 4
+      }
+    ],
+    "targetScore": 3100,
+    "targetLines": 0,
+    "maxMoves": 9,
+    "maxPlacements": 0,
+    "bombs": 0,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "moves",
+        "maximum": 9
+      },
+      {
+        "stars": 2,
+        "metric": "moves",
+        "maximum": 8
+      },
+      {
+        "stars": 3,
+        "metric": "moves",
+        "maximum": 6
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "board": [
+      "######..",
+      "#####...",
+      "####....",
+      "######..",
+      "........",
+      "........",
+      "........",
+      "........"
+    ],
+    "trays": [
+      [
+        "h2",
+        "h3",
+        "h4"
+      ],
+      [
+        "h2",
+        "h3",
+        "h4"
+      ]
+    ],
+    "solution": [
+      {
+        "slot": 0,
+        "row": 0,
+        "col": 6
+      },
+      {
+        "slot": 1,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "slot": 2,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "slot": 0,
+        "row": 3,
+        "col": 6
+      }
+    ],
+    "targetScore": 0,
+    "targetLines": 4,
+    "maxMoves": 0,
+    "maxPlacements": 6,
+    "bombs": 0,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "placements",
+        "maximum": 6
+      },
+      {
+        "stars": 2,
+        "metric": "placements",
+        "maximum": 6
+      },
+      {
+        "stars": 3,
+        "metric": "placements",
+        "maximum": 4
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "board": [
+      "####....",
+      "####....",
+      "####....",
+      "####....",
+      "##.#....",
+      "#..#....",
+      "........",
+      "........"
+    ],
+    "trays": [
+      [
+        "v2",
+        "v3",
+        "v4"
+      ],
+      [
+        "v2",
+        "v3",
+        "v4"
+      ]
+    ],
+    "solution": [
+      {
+        "slot": 0,
+        "row": 6,
+        "col": 0
+      },
+      {
+        "slot": 1,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "slot": 2,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "slot": 0,
+        "row": 6,
+        "col": 3
+      }
+    ],
+    "targetScore": 0,
+    "targetLines": 4,
+    "maxMoves": 0,
+    "maxPlacements": 6,
+    "bombs": 0,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "placements",
+        "maximum": 6
+      },
+      {
+        "stars": 2,
+        "metric": "placements",
+        "maximum": 6
+      },
+      {
+        "stars": 3,
+        "metric": "placements",
+        "maximum": 4
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "board": [
+      "######..",
+      "#####...",
+      "####....",
+      "######..",
+      "#####...",
+      "........",
+      "........",
+      "........"
+    ],
+    "trays": [
+      [
+        "h2",
+        "h3",
+        "h4"
+      ],
+      [
+        "h2",
+        "h3",
+        "h4"
+      ]
+    ],
+    "solution": [
+      {
+        "slot": 0,
+        "row": 0,
+        "col": 6
+      },
+      {
+        "slot": 1,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "slot": 2,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "slot": 0,
+        "row": 3,
+        "col": 6
+      },
+      {
+        "slot": 1,
+        "row": 4,
+        "col": 5
+      }
+    ],
+    "targetScore": 0,
+    "targetLines": 5,
+    "maxMoves": 0,
+    "maxPlacements": 7,
+    "bombs": 0,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "placements",
+        "maximum": 7
+      },
+      {
+        "stars": 2,
+        "metric": "placements",
+        "maximum": 7
+      },
+      {
+        "stars": 3,
+        "metric": "placements",
+        "maximum": 5
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "board": [
+      "#####...",
+      "#####...",
+      "#####...",
+      "#####...",
+      "##.##...",
+      "#..#....",
+      "........",
+      "........"
+    ],
+    "trays": [
+      [
+        "v2",
+        "v3",
+        "v4"
+      ],
+      [
+        "v2",
+        "v3",
+        "v4"
+      ]
+    ],
+    "solution": [
+      {
+        "slot": 0,
+        "row": 6,
+        "col": 0
+      },
+      {
+        "slot": 1,
+        "row": 5,
+        "col": 1
+      },
+      {
+        "slot": 2,
+        "row": 4,
+        "col": 2
+      },
+      {
+        "slot": 0,
+        "row": 6,
+        "col": 3
+      },
+      {
+        "slot": 1,
+        "row": 5,
+        "col": 4
+      }
+    ],
+    "targetScore": 0,
+    "targetLines": 5,
+    "maxMoves": 0,
+    "maxPlacements": 7,
+    "bombs": 0,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "placements",
+        "maximum": 7
+      },
+      {
+        "stars": 2,
+        "metric": "placements",
+        "maximum": 7
+      },
+      {
+        "stars": 3,
+        "metric": "placements",
+        "maximum": 5
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "board": [
+      "######..",
+      "#####...",
+      "####....",
+      "######..",
+      "#####...",
+      "####....",
+      "........",
+      "........"
+    ],
+    "trays": [
+      [
+        "h2",
+        "h3",
+        "h4"
+      ],
+      [
+        "h2",
+        "h3",
+        "h4"
+      ]
+    ],
+    "solution": [
+      {
+        "slot": 0,
+        "row": 0,
+        "col": 6
+      },
+      {
+        "slot": 1,
+        "row": 1,
+        "col": 5
+      },
+      {
+        "slot": 2,
+        "row": 2,
+        "col": 4
+      },
+      {
+        "slot": 0,
+        "row": 3,
+        "col": 6
+      },
+      {
+        "slot": 1,
+        "row": 4,
+        "col": 5
+      },
+      {
+        "slot": 2,
+        "row": 5,
+        "col": 4
+      }
+    ],
+    "targetScore": 0,
+    "targetLines": 6,
+    "maxMoves": 0,
+    "maxPlacements": 8,
+    "bombs": 0,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "placements",
+        "maximum": 8
+      },
+      {
+        "stars": 2,
+        "metric": "placements",
+        "maximum": 8
+      },
+      {
+        "stars": 3,
+        "metric": "placements",
+        "maximum": 6
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "board": [
+      ".#######",
+      "#.######",
+      "##.#####",
+      "###.####",
+      "####.###",
+      "#####.##",
+      "######.#",
+      "#######."
+    ],
+    "trays": [
+      [
+        "square",
+        "L",
+        "T"
+      ],
+      [
+        "single",
+        "h2",
+        "v3"
+      ]
+    ],
+    "solution": [
+      {
+        "bomb": true,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "slot": 0,
+        "row": 0,
+        "col": 0
+      }
+    ],
+    "targetScore": 0,
+    "targetLines": 4,
+    "maxMoves": 5,
+    "maxPlacements": 0,
+    "bombs": 1,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "moves",
+        "maximum": 5
+      },
+      {
+        "stars": 2,
+        "metric": "moves",
+        "maximum": 4
+      },
+      {
+        "stars": 3,
+        "metric": "moves",
+        "maximum": 2
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "board": [
+      "#######.",
+      "######.#",
+      "#####.##",
+      "####.###",
+      "###.####",
+      "##.#####",
+      "#.######",
+      ".#######"
+    ],
+    "trays": [
+      [
+        "square",
+        "L",
+        "T"
+      ],
+      [
+        "single",
+        "h2",
+        "v3"
+      ]
+    ],
+    "solution": [
+      {
+        "bomb": true,
+        "row": 0,
+        "col": 7
+      },
+      {
+        "slot": 0,
+        "row": 0,
+        "col": 6
+      }
+    ],
+    "targetScore": 0,
+    "targetLines": 4,
+    "maxMoves": 5,
+    "maxPlacements": 0,
+    "bombs": 1,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "moves",
+        "maximum": 5
+      },
+      {
+        "stars": 2,
+        "metric": "moves",
+        "maximum": 4
+      },
+      {
+        "stars": 3,
+        "metric": "moves",
+        "maximum": 2
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "board": [
+      "#######.",
+      "######.#",
+      "#####.##",
+      "####.###",
+      "###.####",
+      "##.#####",
+      "#.######",
+      ".#######"
+    ],
+    "trays": [
+      [
+        "square",
+        "L",
+        "T"
+      ],
+      [
+        "single",
+        "h2",
+        "v3"
+      ]
+    ],
+    "solution": [
+      {
+        "bomb": true,
+        "row": 7,
+        "col": 0
+      },
+      {
+        "slot": 0,
+        "row": 6,
+        "col": 0
+      }
+    ],
+    "targetScore": 0,
+    "targetLines": 4,
+    "maxMoves": 5,
+    "maxPlacements": 0,
+    "bombs": 2,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "moves",
+        "maximum": 5
+      },
+      {
+        "stars": 2,
+        "metric": "moves",
+        "maximum": 4
+      },
+      {
+        "stars": 3,
+        "metric": "moves",
+        "maximum": 2
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "board": [
+      ".#######",
+      "#.######",
+      "##.#####",
+      "###.####",
+      "####.###",
+      "#####.##",
+      "######.#",
+      "#######."
+    ],
+    "trays": [
+      [
+        "square",
+        "L",
+        "T"
+      ],
+      [
+        "single",
+        "h2",
+        "v3"
+      ]
+    ],
+    "solution": [
+      {
+        "bomb": true,
+        "row": 7,
+        "col": 7
+      },
+      {
+        "slot": 0,
+        "row": 6,
+        "col": 6
+      }
+    ],
+    "targetScore": 0,
+    "targetLines": 4,
+    "maxMoves": 5,
+    "maxPlacements": 0,
+    "bombs": 2,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "moves",
+        "maximum": 5
+      },
+      {
+        "stars": 2,
+        "metric": "moves",
+        "maximum": 4
+      },
+      {
+        "stars": 3,
+        "metric": "moves",
+        "maximum": 2
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "board": [
+      ".#######",
+      "#.######",
+      "##.#####",
+      "###.####",
+      "####.###",
+      "#####.##",
+      "######.#",
+      "#######."
+    ],
+    "trays": [
+      [
+        "square",
+        "L",
+        "T"
+      ],
+      [
+        "single",
+        "h2",
+        "v3"
+      ]
+    ],
+    "solution": [
+      {
+        "bomb": true,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "slot": 0,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "slot": 1,
+        "row": 0,
+        "col": 0
+      },
+      {
+        "slot": 2,
+        "row": 0,
+        "col": 4
+      },
+      {
+        "slot": 0,
+        "row": 2,
+        "col": 2
+      }
+    ],
+    "targetScore": 0,
+    "targetLines": 5,
+    "maxMoves": 8,
+    "maxPlacements": 0,
+    "bombs": 3,
+    "stars": [
+      {
+        "stars": 1,
+        "metric": "moves",
+        "maximum": 8
+      },
+      {
+        "stars": 2,
+        "metric": "moves",
+        "maximum": 7
+      },
+      {
+        "stars": 3,
+        "metric": "moves",
+        "maximum": 5
+      }
+    ]
+  }
+]

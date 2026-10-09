@@ -1,0 +1,16 @@
+{
+  "method": "Node VM executes delivered HTML controller with localStorage and audio shims; not DOM/browser rendering or Flutter",
+  "passed": 10,
+  "checks": [
+    "Login reward only once after reload",
+    "Locked direct launch rejected",
+    "All 20 solutions through actual controller, unlocking and rewards",
+    "Replay rewards only normal line coins",
+    "Classic saved board and tray resume",
+    "Save failure keeps gameplay and coins unchanged",
+    "Insufficient funds rejected and owned product not charged twice",
+    "Photo cancel leaves existing settings intact",
+    "Settings stored and language changes delivered markup",
+    "Paused time attack expires, future placements rejected"
+  ]
+}

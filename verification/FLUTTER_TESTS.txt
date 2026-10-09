@@ -1,0 +1,53 @@
+   Woah! You appear to be trying to run flutter as root.
+   We strongly recommend running the flutter tool without superuser privileges.
+  /
+📎
+
+00:00 +0: loading /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart                                                                                                             
+00:01 +0: loading /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart                                                                                                             
+00:01 +0: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Balance prevents purchases; owned item cannot be charged twice                                                     
+00:01 +1: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Balance prevents purchases; owned item cannot be charged twice                                                     
+00:01 +1: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Daily login and mission each once across restart and backward date                                                 
+00:01 +2: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Daily login and mission each once across restart and backward date                                                 
+00:01 +2: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Completion, first three stars and achievements never repeat; line coins do                                         
+00:01 +3: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Completion, first three stars and achievements never repeat; line coins do                                         
+00:01 +3: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Locked level checked at domain and game launch layers                                                              
+00:01 +4: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Locked level checked at domain and game launch layers                                                              
+00:01 +4: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Photo cancellation keeps ownership, path, background and balance                                                   
+00:01 +5: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Photo cancellation keeps ownership, path, background and balance                                                   
+00:01 +5: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: All six achievements reward exactly once after serialization                                                       
+00:01 +6: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: All six achievements reward exactly once after serialization                                                       
+00:01 +6: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Profile stores all settings, cosmetics, progress and Classic snapshot                                              
+00:01 +7: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Profile stores all settings, cosmetics, progress and Classic snapshot                                              
+00:01 +7: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Save failure rolls back both gameplay and earned currency                                                          
+00:01 +8: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Save failure rolls back both gameplay and earned currency                                                          
+00:01 +8: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Corrupt main profile recovers backup; bad Classic does not lose progress                                           
+00:01 +9: /workspace/scratch/36d879c90c6f/block_crash/test/economy_store_test.dart: Corrupt main profile recovers backup; bad Classic does not lose progress                                           
+00:01 +9: loading /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart                                                                                                                    
+00:01 +9: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                      
+00:01 +10: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +11: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +12: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +13: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +14: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +15: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +16: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +17: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +18: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +19: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +20: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +21: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +22: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +23: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +24: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +25: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:01 +26: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:02 +26: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:02 +27: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Game layout fits small portrait display and offers three piece slots                                                     
+00:02 +27: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Small portrait fits timeAttack including bomb tray                                                                       
+00:02 +28: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Small portrait fits timeAttack including bomb tray                                                                       
+00:02 +28: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Small portrait fits rush including bomb tray                                                                             
+00:02 +29: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Small portrait fits rush including bomb tray                                                                             
+00:02 +29: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Small portrait fits adventure including bomb tray                                                                        
+00:02 +30: /workspace/scratch/36d879c90c6f/block_crash/test/widget_test.dart: Small portrait fits adventure including bomb tray                                                                        
+00:02 +30: All tests passed!                                                                                                                                                                           

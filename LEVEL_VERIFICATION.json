@@ -1,0 +1,186 @@
+{
+  "method": "Independent Python reference replay, not Dart execution",
+  "passed": 20,
+  "levels": [
+    {
+      "level": 1,
+      "score": 110,
+      "lines": 1,
+      "moves": 1,
+      "placements": 1,
+      "stars": 3,
+      "lineCoins": 10
+    },
+    {
+      "level": 2,
+      "score": 325,
+      "lines": 2,
+      "moves": 2,
+      "placements": 2,
+      "stars": 3,
+      "lineCoins": 40
+    },
+    {
+      "level": 3,
+      "score": 745,
+      "lines": 3,
+      "moves": 3,
+      "placements": 3,
+      "stars": 3,
+      "lineCoins": 90
+    },
+    {
+      "level": 4,
+      "score": 745,
+      "lines": 3,
+      "moves": 3,
+      "placements": 3,
+      "stars": 3,
+      "lineCoins": 90
+    },
+    {
+      "level": 5,
+      "score": 405,
+      "lines": 2,
+      "moves": 1,
+      "placements": 1,
+      "stars": 3,
+      "lineCoins": 40
+    },
+    {
+      "level": 6,
+      "score": 745,
+      "lines": 3,
+      "moves": 3,
+      "placements": 3,
+      "stars": 3,
+      "lineCoins": 90
+    },
+    {
+      "level": 7,
+      "score": 745,
+      "lines": 3,
+      "moves": 3,
+      "placements": 3,
+      "stars": 3,
+      "lineCoins": 90
+    },
+    {
+      "level": 8,
+      "score": 745,
+      "lines": 3,
+      "moves": 3,
+      "placements": 3,
+      "stars": 3,
+      "lineCoins": 90
+    },
+    {
+      "level": 9,
+      "score": 3190,
+      "lines": 6,
+      "moves": 6,
+      "placements": 6,
+      "stars": 3,
+      "lineCoins": 360
+    },
+    {
+      "level": 10,
+      "score": 3190,
+      "lines": 6,
+      "moves": 6,
+      "placements": 6,
+      "stars": 3,
+      "lineCoins": 360
+    },
+    {
+      "level": 11,
+      "score": 1555,
+      "lines": 4,
+      "moves": 4,
+      "placements": 4,
+      "stars": 3,
+      "lineCoins": 180
+    },
+    {
+      "level": 12,
+      "score": 1555,
+      "lines": 4,
+      "moves": 4,
+      "placements": 4,
+      "stars": 3,
+      "lineCoins": 180
+    },
+    {
+      "level": 13,
+      "score": 2370,
+      "lines": 5,
+      "moves": 5,
+      "placements": 5,
+      "stars": 3,
+      "lineCoins": 270
+    },
+    {
+      "level": 14,
+      "score": 2370,
+      "lines": 5,
+      "moves": 5,
+      "placements": 5,
+      "stars": 3,
+      "lineCoins": 270
+    },
+    {
+      "level": 15,
+      "score": 3190,
+      "lines": 6,
+      "moves": 6,
+      "placements": 6,
+      "stars": 3,
+      "lineCoins": 360
+    },
+    {
+      "level": 16,
+      "score": 3230,
+      "lines": 4,
+      "moves": 2,
+      "placements": 1,
+      "stars": 3,
+      "lineCoins": 120
+    },
+    {
+      "level": 17,
+      "score": 3230,
+      "lines": 4,
+      "moves": 2,
+      "placements": 1,
+      "stars": 3,
+      "lineCoins": 120
+    },
+    {
+      "level": 18,
+      "score": 3230,
+      "lines": 4,
+      "moves": 2,
+      "placements": 1,
+      "stars": 3,
+      "lineCoins": 120
+    },
+    {
+      "level": 19,
+      "score": 3230,
+      "lines": 4,
+      "moves": 2,
+      "placements": 1,
+      "stars": 3,
+      "lineCoins": 120
+    },
+    {
+      "level": 20,
+      "score": 3375,
+      "lines": 5,
+      "moves": 5,
+      "placements": 4,
+      "stars": 3,
+      "lineCoins": 130
+    }
+  ]
+}
