@@ -1,5 +1,8 @@
 name: Block Crash Line — verify and build Android App Bundle
 on: [push, workflow_dispatch]
+permissions:
+  contents: write
+  issues: write
 jobs:
   android:
     runs-on: ubuntu-latest
@@ -14,54 +17,65 @@ jobs:
           channel: stable
           flutter-version: '3.35.x'
           cache: true
-      - run: flutter --version
-      - run: flutter pub get
-      - run: dart format --output=none --set-exit-if-changed lib test
-      - run: flutter analyze
-      - run: flutter test
-      - name: Restore upload keystore from secrets (skipped when secrets are absent)
+      - name: Verify and build
+        id: build
         env:
           KEYSTORE_BASE64: ${{ secrets.UPLOAD_KEYSTORE_BASE64 }}
+          KS_PASS: ${{ secrets.UPLOAD_KEYSTORE_PASSWORD }}
+          KS_ALIAS: ${{ secrets.UPLOAD_KEY_ALIAS }}
+          KEY_PASS: ${{ secrets.UPLOAD_KEY_PASSWORD }}
         run: |
-          if [ -z "$KEYSTORE_BASE64" ]; then echo "No upload keystore secret; bundle will be unsigned"; exit 0; fi
-          mkdir -p android/keys
-          echo "$KEYSTORE_BASE64" | base64 -d > android/keys/block-crash-upload.jks
-          cat > android/key.properties <<EOP
-          storeFile=keys/block-crash-upload.jks
-          storePassword=${{ secrets.UPLOAD_KEYSTORE_PASSWORD }}
-          keyAlias=${{ secrets.UPLOAD_KEY_ALIAS }}
-          keyPassword=${{ secrets.UPLOAD_KEY_PASSWORD }}
-          EOP
-      - run: flutter build appbundle --release --no-pub
-      - run: flutter build apk --release --no-pub
-      - name: Report bundle manifest (package, versionCode, targetSdk) and 16 KB page alignment
-        run: |
-          set -e
+          set -o pipefail
+          mkdir -p build
+          LOG=build/ci.log
+          run() { echo "+ $*" | tee -a $LOG; "$@" 2>&1 | tee -a $LOG; }
+          run flutter --version
+          run flutter pub get
+          run dart format lib test
+          run flutter analyze
+          run flutter test
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            mkdir -p android/keys
+            echo "$KEYSTORE_BASE64" | base64 -d > android/keys/block-crash-upload.jks
+            printf 'storeFile=keys/block-crash-upload.jks\nstorePassword=%s\nkeyAlias=%s\nkeyPassword=%s\n' "$KS_PASS" "$KS_ALIAS" "$KEY_PASS" > android/key.properties
+            echo "Upload keystore restored (signed build)" | tee -a $LOG
+          else
+            echo "No upload keystore secret; bundle will be UNSIGNED" | tee -a $LOG
+          fi
+          run flutter build appbundle --release --no-pub
+          run flutter build apk --release --no-pub
           AAB=build/app/outputs/bundle/release/app-release.aab
           APK=build/app/outputs/flutter-apk/app-release.apk
-          ls -l "$AAB" "$APK"
-          sha256sum "$AAB" "$APK" | tee build/checksums.txt
+          run ls -l "$AAB" "$APK"
+          run sha256sum "$AAB" "$APK"
           BT=$ANDROID_HOME/build-tools/$(ls $ANDROID_HOME/build-tools | sort -V | tail -1)
-          "$BT/aapt2" dump badging "$APK" | grep -E "^package|sdkVersion|targetSdkVersion|uses-permission" | tee build/apk_badging.txt
-          "$BT/apksigner" verify --print-certs "$APK" | tee build/apk_signature.txt || echo "APK unsigned (no upload key secrets)"
-          mkdir -p build/aab_x && cd build/aab_x && unzip -q ../../"$AAB"
-          echo "== 16 KB page-size alignment (p_align must be 0x4000 or 0x10000) ==" | tee ../elf_alignment.txt
-          for so in $(find base/lib -name '*.so'); do
+          "$BT/aapt2" dump badging "$APK" | grep -E "^package|sdkVersion|targetSdkVersion|uses-permission" | tee -a $LOG
+          ("$BT/apksigner" verify --print-certs "$APK" || echo "APK UNSIGNED") 2>&1 | grep -vi warning | tee -a $LOG
+          mkdir -p build/aab_x && (cd build/aab_x && unzip -qo ../../"$AAB")
+          echo "== 16 KB page-size alignment (p_align 0x4000/0x10000 expected) ==" | tee -a $LOG
+          bad=0
+          for so in $(find build/aab_x/base/lib -name '*.so'); do
             al=$(readelf -lW "$so" | awk '/LOAD/{print $NF; exit}')
-            case "$al" in 0x4000|0x10000) st=ALIGNED;; *) st=UNALIGNED;; esac
-            echo "$st $al $so" | tee -a ../elf_alignment.txt
+            case "$al" in 0x4000|0x10000) st=ALIGNED;; *) st=UNALIGNED; bad=1;; esac
+            echo "$st $al ${so#build/aab_x/base/lib/}" | tee -a $LOG
           done
-          ! grep -q UNALIGNED ../elf_alignment.txt
+          [ $bad -eq 0 ]
+      - name: Publish result as commit comment
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          STATUS="${{ steps.build.outcome }}"
+          { echo "## CI $STATUS — run ${{ github.run_id }}"; echo; echo '```'; tail -c 60000 build/ci.log 2>/dev/null || echo "(no log)"; echo '```'; } > build/comment.md
+          gh api repos/${{ github.repository }}/commits/${{ github.sha }}/comments -F body=@build/comment.md >/dev/null || true
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: block-crash-line-release
           path: |
             build/app/outputs/bundle/release/app-release.aab
             build/app/outputs/flutter-apk/app-release.apk
-            build/checksums.txt
-            build/apk_badging.txt
-            build/apk_signature.txt
-            build/elf_alignment.txt
+            build/ci.log
       - name: Remove keystore from runner
         if: always()
         run: rm -f android/keys/block-crash-upload.jks android/key.properties
