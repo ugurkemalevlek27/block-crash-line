@@ -53,7 +53,7 @@ class AppController extends ChangeNotifier {
       _timer =
           Timer.periodic(const Duration(milliseconds: 150), (_) => _tick());
     } catch (e) {
-      error = 'Başlatma / Startup: $e';
+      error = 'Startup: $e';
     }
     notifyListeners();
   }
@@ -77,7 +77,7 @@ class AppController extends ChangeNotifier {
       await _safeAudio(() => audio.configure(profile));
       return true;
     } catch (e) {
-      error = 'Kayıt / Save: $e';
+      error = 'Save: $e';
       return false;
     } finally {
       busy = false;
@@ -91,7 +91,7 @@ class AppController extends ChangeNotifier {
       try {
         profile.requireLevel(levelId ?? 0);
       } catch (_) {
-        error = 'Bu bölüm kilitli / Level locked';
+        error = 'Level locked';
         notifyListeners();
         return false;
       }
@@ -223,7 +223,7 @@ class AppController extends ChangeNotifier {
               imageQuality: 90);
       if (photo != null) await _installPhoto(photo);
     } catch (e) {
-      error = 'Fotoğraf / Photo: $e';
+      error = 'Photo: $e';
       notifyListeners();
     }
   }

@@ -452,20 +452,6 @@ class SettingsScreen extends ConsumerWidget {
                       : (v) {
                           if (v != null) a.mutate((p) => p.musicTrack = v);
                         })),
-          ListTile(
-              title: Text(text(p, 'Dil', 'Language')),
-              subtitle: DropdownButton<String>(
-                  value: p.language,
-                  isExpanded: true,
-                  items: const [
-                    DropdownMenuItem(value: 'tr', child: Text('Türkçe')),
-                    DropdownMenuItem(value: 'en', child: Text('English'))
-                  ],
-                  onChanged: a.busy
-                      ? null
-                      : (v) {
-                          if (v != null) a.mutate((p) => p.language = v);
-                        })),
           const SizedBox(height: 24),
           Text(
               text(

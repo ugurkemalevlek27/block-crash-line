@@ -75,7 +75,7 @@ class _BlockCrashAppState extends ConsumerState<BlockCrashApp>
                                   const SizedBox(height: 20),
                                   FilledButton(
                                       onPressed: app.initialize,
-                                      child: const Text('Yeniden dene / Retry'))
+                                      child: const Text('Retry'))
                                 ]))))
             : const HomeScreen());
   }

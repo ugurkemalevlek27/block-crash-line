@@ -26,7 +26,7 @@ class Profile {
   int? rushBest;
   Set<String> owned = {'dark', 'plain'}, achievements = {}, rewards = {};
   Map<int, int> levelStars = {}, levelScores = {};
-  String theme = 'dark', background = 'plain', photo = '', language = 'tr';
+  String theme = 'dark', background = 'plain', photo = '', language = 'en';
   double masterVolume = .7, musicVolume = .4;
   bool effects = true, vibration = true, reducedMotion = false;
   int musicTrack = 0;
@@ -147,7 +147,7 @@ class Profile {
     p.background = j['background'] as String;
     p.photo = j['photo'] as String;
     p.language = j['language'] as String;
-    if (!['tr', 'en'].contains(p.language)) p.language = 'tr';
+    if (!['tr', 'en'].contains(p.language)) p.language = 'en';
     p.masterVolume =
         (j['masterVolume'] as num).toDouble().clamp(0.0, 1.0).toDouble();
     p.musicVolume =

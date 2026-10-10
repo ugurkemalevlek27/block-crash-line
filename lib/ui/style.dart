@@ -50,7 +50,9 @@ class BoardStyle {
       };
 }
 
-String text(Profile p, String tr, String en) => p.language == 'en' ? en : tr;
+/// The app ships in English only. The Turkish strings are kept in source for a
+/// possible later localisation but are never shown.
+String text(Profile p, String tr, String en) => en;
 
 class Backdrop extends StatelessWidget {
   final Profile profile;

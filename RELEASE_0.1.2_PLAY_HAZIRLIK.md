@@ -17,3 +17,9 @@ Henüz yapılmayanlar: bu ortamda Flutter/Android SDK indirilemediği için derl
 - Manifest: INTERNET, ACCESS_NETWORK_STATE, AdMob APPLICATION_ID meta-data.
 - AdMob gerçek kimlikleri işlendi: App ID ca-app-pub-5327895171614279~9354185726; Home Banner /7547203472; Game Over Interstitial /7219900417. Debug derlemede otomatik test kimlikleri, release derlemede gerçek kimlikler.
 - "Reklamsız" ifadeleri ana ekran, mağaza metni ve gizlilik politikasından kaldırıldı; politika AdMob bölümüyle güncellendi.
+
+## 0.1.3+4 — Yalnızca İngilizce arayüz (Kemal'in talebi, 10 Ekim 2026)
+- `text()` yardımcısı her zaman İngilizce metni döndürür; Türkçe metinler kaynakta duruyor ama gösterilmiyor.
+- Ayarlar'daki dil seçici kaldırıldı; varsayılan dil `en`.
+- İki dilli hata mesajları (Startup/Save/Level locked/Photo/Retry) İngilizce'ye çevrildi; widget testleri "Piece" etiketine göre güncellendi.
+- versionCode 3 → 4.

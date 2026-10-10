@@ -24,7 +24,7 @@ void main() {
         child: const MaterialApp(home: GameScreen())));
     await tester.pump();
     expect(find.text('Classic'), findsOneWidget);
-    expect(find.bySemanticsLabel(RegExp('Parça [123]:')), findsNWidgets(3));
+    expect(find.bySemanticsLabel(RegExp('Piece [123]:')), findsNWidgets(3));
     expect(tester.takeException(), isNull);
   });
   for (final mode in [Mode.timeAttack, Mode.rush, Mode.adventure]) {
@@ -46,7 +46,7 @@ void main() {
           overrides: [appProvider.overrideWith((ref) => controller)],
           child: const MaterialApp(home: GameScreen())));
       await tester.pump();
-      expect(find.bySemanticsLabel(RegExp('Parça [123]:')), findsNWidgets(3));
+      expect(find.bySemanticsLabel(RegExp('Piece [123]:')), findsNWidgets(3));
       expect(tester.takeException(), isNull);
     });
   }
