@@ -76,6 +76,17 @@ jobs:
             build/app/outputs/bundle/release/app-release.aab
             build/app/outputs/flutter-apk/app-release.apk
             build/ci.log
+      - name: Store AAB/APK in the builds branch
+        if: ${{ steps.build.outcome == 'success' }}
+        run: |
+          VER=$(grep '^version:' pubspec.yaml | awk '{print $2}')
+          TMP=$(mktemp -d)
+          cp build/app/outputs/bundle/release/app-release.aab "$TMP/block-crash-line-$VER.aab"
+          cp build/app/outputs/flutter-apk/app-release.apk "$TMP/block-crash-line-$VER.apk"
+          cp build/ci.log "$TMP/ci-$VER.log"
+          cd "$TMP" && git init -q -b builds && git config user.name "ci" && git config user.email "ci@users.noreply.github.com"
+          git add . && git commit -q -m "Build $VER from run ${{ github.run_id }}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" builds:builds
       - name: Remove keystore from runner
         if: always()
         run: rm -f android/keys/block-crash-upload.jks android/key.properties
